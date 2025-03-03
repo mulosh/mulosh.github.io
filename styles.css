@@ -103,9 +103,39 @@ body {
     font-size: 1.3rem;
     color: var(--light-text);
     max-width: 700px;
-    margin: 0 auto 3rem;
+    margin: 0 auto 2rem;
     animation: fadeInUp 1s ease 0.4s;
     animation-fill-mode: both;
+}
+
+.linkedin-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    background: #0077b5;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    margin: 0 auto 2rem;
+    transition: var(--transition);
+    animation: fadeInUp 1s ease 0.5s;
+    animation-fill-mode: both;
+}
+
+.linkedin-badge i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.linkedin-badge a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.linkedin-badge:hover {
+    background: #005582;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 119, 181, 0.2);
 }
 
 /* Hero Stats */
@@ -239,7 +269,48 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
+    align-items: start;
+}
+
+/* LinkedIn Profile */
+.linkedin-profile {
+    background: var(--background);
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    border: 2px solid #0077b5;
+    grid-column: 1 / -1;
+}
+
+.profile-header {
+    display: flex;
     align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.profile-header i {
+    font-size: 2rem;
+    color: #0077b5;
+}
+
+.linkedin-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.75rem 1.5rem;
+    background: #0077b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.linkedin-link:hover {
+    background: #005582;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 119, 181, 0.2);
 }
 
 .about-text {
